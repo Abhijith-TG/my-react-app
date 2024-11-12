@@ -1,0 +1,37 @@
+
+.caa {
+    background: linear-gradient(135deg, #055368, #d77ceb);
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+  
+  .text-center {
+    font-family: "Monotype Corsiva";
+  }
+  
+  .form-container {
+    width: 70%;
+    margin: 20px 50px 40px 180px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .form-container .form-label {
+    font-weight: bold;
+  }
+  
+  .form-container input {
+    border-radius: 4px;
+  }
+  
+  button {
+    background: linear-gradient(135deg, #81b0be, #dfabeb);
+    width: 30%;
+    margin: 20px 50px 40px 180px;
+  }
+  
