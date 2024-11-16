@@ -1,13 +1,14 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button,icons} from "react-bootstrap";
+
 import "./Loginpage.css";
 
 const LoginPage = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
 
@@ -18,12 +19,23 @@ const LoginPage = () => {
     if (storedPassword && storedPassword === password) {
       setMessage('Login successful!');
       setError('');
+      
+      // Save username to localStorage if 'Remember Me' is checked
+      if (rememberMe) {
+        localStorage.setItem('rememberedUsername', username);
+      }
+
       // Navigate to the next page (e.g., dashboard) after successful login
       navigate("/a"); // Change this to your desired path
     } else {
       setError('Invalid username or password');
       setMessage('');
     }
+  };
+
+  const handleForgotPassword = () => {
+    // Handle forgot password logic here (e.g., navigate to a password reset page)
+    console.log('Forgot Password clicked');
   };
 
   return (
@@ -39,8 +51,8 @@ const LoginPage = () => {
 
         <div className="form-container">
           <form onSubmit={handleLogin}>
-            <div className="mb-3">
-              <label className="form-label">Username</label>
+            <div className="mb-2">
+              <label className="form-label">Username <i class="fa-solid fa-user"></i></label>
               <input
                 type="text"
                 className="form-control"
@@ -59,14 +71,29 @@ const LoginPage = () => {
                 required
               />
             </div>
-            <Button type="submit" variant="primary">Login</Button>
+
+            <div className="mb-3">
+              <label className="form-check-label">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  checked={rememberMe}
+                  onChange={() => setRememberMe(!rememberMe)}
+                />
+                Remember Me
+              </label>
+           
+
+           
+
+            <Button type="submit" variant="primary">Login</Button> </div>
           </form>
+
+          <div className="signup-link mt-3">
+            <span>Don't have an account? <a href="/signup">Sign Up</a></span>
+          </div>
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <br></br>
       <br></br>
       <br></br>
