@@ -1,5 +1,5 @@
 .caa {
-  background: linear-gradient(135deg, #02dc88, #cd68e4);
+  background: linear-gradient(135deg, #ffb76e, #c6e9ff);
 }
 
 code {
@@ -33,7 +33,7 @@ code {
 }
 
 button {
-  background: linear-gradient(135deg, #80cb71, #dfabeb);
+  background: linear-gradient(135deg, #fb9337, #dfabeb);
   width: 30%;
   margin: 20px 50px 40px 106px;
   border: none;  /* Remove the border */

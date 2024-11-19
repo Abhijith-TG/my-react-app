@@ -20,13 +20,13 @@ const LoginPage = () => {
       setMessage('Login successful!');
       setError('');
       
-      // Save username to localStorage if 'Remember Me' is checked
+      
       if (rememberMe) {
         localStorage.setItem('rememberedUsername', username);
       }
 
-      // Navigate to the next page (e.g., dashboard) after successful login
-      navigate("/a"); // Change this to your desired path
+      
+      navigate("/a"); 
     } else {
       setError('Invalid username or password');
       setMessage('');
