@@ -84,9 +84,7 @@ function AdminLogin() {
                     <p>Your business, your control. Log in to make it happen.</p>
                 </div>
             </div>
-
-            {/* Modal for successful login */}
-            <Modal show={showLoginModal} onHide={handleCloseLoginModal}>
+            <Modal show={showLoginModal} onHide={handleCloseLoginModal}>  
                 <Modal.Body>
                     <b>You are successfully logged in!</b>
                 </Modal.Body>
