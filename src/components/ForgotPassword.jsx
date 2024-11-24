@@ -20,7 +20,7 @@ const ForgotPassword = () => {
     <div style={{ backgroundImage:`url('https://shorturl.at/nTncn')`, backgroundSize: "cover", margin: '0', height: '100vh', backgroundPosition: 'center' }}>
      <div> 
                 <img src='/images/zippycart.png' style={{width:'100px',marginTop:'25px',marginLeft:'1350px',marginBottom:'-1%'}}/>
-                <p style={{fontWeight:'bolder',marginLeft:'1350px',fontSize:'12PX',marginTop:'5px'}}>Shop the future today!</p>
+                <p style={{fontWeight:'bolder',marginLeft:'1350px',fontSize:'12px',marginTop:'5px'}}>Shop the future today!</p>
             </div>
     <div className="container">
         <Card className="card">
