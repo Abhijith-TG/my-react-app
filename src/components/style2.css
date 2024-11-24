@@ -1,0 +1,129 @@
+
+
+/* Full container with background image and gradient overlay */
+.container {
+position:relative;
+   
+   margin-left: 0%;
+ 
+    background: transparent;
+    margin-top: 0%;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row; 
+   
+    gap: 20px;
+}
+
+.welcome-text {
+   
+    margin-left: 0%;
+  margin-top: 5%;
+  margin-right: 0%;
+}
+
+.welcome-text h1 {
+    font-size: 50px;
+    margin-bottom: 0.5em;
+    color: black;
+    margin-top: 105px;
+    font-weight: bold;
+    margin-left: 110px;
+    
+}
+
+.welcome-text p {
+    font-size: 25px;
+    line-height: 1.4;
+    color: black;
+    margin-left: 110px;
+}
+
+.card {
+    background:rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    width: 410px;
+    height: 320px;
+    margin-right: 0%;
+    margin-left: 210px;
+    margin-top: 6%;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+
+.options .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    margin-bottom: 10px;
+}
+
+.options .remember-me input[type="checkbox"] {
+    margin: 0;
+    width: auto; 
+    height: auto;
+}
+
+.options .remember-label {
+    font-size: 0.85em;
+    color: #fff;
+}
+.heading
+{
+    text-align: center;
+    margin-top: 2px;
+}
+
+.login-button {
+    width: 25%;
+    padding: 10px;
+    border: transparent;
+    border-radius: 4px;
+    background:black;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.login-button:hover {
+    background: black;
+}
+
+
+
+.links {
+    color: white;
+    text-decoration: none;
+    margin-left: 130px;
+    margin-top: 9px;
+   font-size: medium;
+}
+.message{
+    align-items: center;
+    margin-top: 220px;
+    margin-left: 100px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    color:black;
+}
+
+
