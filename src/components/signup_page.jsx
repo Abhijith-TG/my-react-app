@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './signup_up.css';
+import '../styles/signup_up.css';
 import { useNavigate } from 'react-router-dom';
 
 const RegistrationForm = () => {
