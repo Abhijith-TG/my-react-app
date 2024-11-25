@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button, FormControl, InputGroup, Container, Row, Col, Navbar, Nav, Spinner, Dropdown } from 'react-bootstrap';
 import { BsSearch, BsCart, BsPerson } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
 const ProductSearch = () => {
   const [products, setProducts] = useState([]);
@@ -23,8 +24,9 @@ const ProductSearch = () => {
     };
     fetchProducts();
   }, []);
-
+const navigate = useNavigate()
   const handleSearch = () => {
+    
     if (searchQuery.trim() === '') {
       setFilteredProducts([]);
       setSearched(false);
@@ -56,8 +58,8 @@ const ProductSearch = () => {
           }
 
           .product-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            border: 0px solid grey;
+            border-radius: 5px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background-color: white;
@@ -65,7 +67,7 @@ const ProductSearch = () => {
             transition: transform 0.2s ease;
             display: flex;
             flex-direction: column;
-            height: 380px;
+            width:200px
           }
 
           .product-card:hover {
@@ -232,7 +234,7 @@ const ProductSearch = () => {
 
             <Navbar.Brand className="mx-auto">
               <div className="store-name">ZippyStore.com</div>
-              <img src="/images/logo.png" alt="Logo" />
+              <img src={`${process.env.PUBLIC_URL}/images/imgg.png`} alt="Logo" />
             </Navbar.Brand>
 
             <Nav className="ml-auto">
