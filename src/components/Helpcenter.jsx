@@ -1,4 +1,4 @@
-import './helpcenter.css';
+import '../styles/helpcenter.css';
 import React, { useState } from "react";
 
 const Helpcenter = () => {
