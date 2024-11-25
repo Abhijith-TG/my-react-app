@@ -3,16 +3,16 @@ import "../styles/style.css";
 import { Card, Form, Button } from "react-bootstrap";
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [info, setInfo] = useState("");
 
   const handleForgotPassword = (e) => {
     e.preventDefault();
 
     if (email === "admin@admin.com") {
-      setMessage(`A recovery password has been sent to ${email}`);
+      setInfo(`A recovery password has been sent to ${email}`);
       setEmail("");
     } else {
-      setMessage("Please enter a valid email address.");
+      setInfo("Please enter a valid email address.");
     }
   };
 
@@ -28,7 +28,9 @@ const ForgotPassword = () => {
     >
       <div>
         <img
-          src="/images/zippycart.png" className="image" />
+          src="/images/zippycart.png" className="image"
+         
+        />
         <p
           style={{
             fontWeight: "bolder",
@@ -72,9 +74,9 @@ const ForgotPassword = () => {
             </Button>
           </Form>
         </Card>
-        {message && (
+        {info && (
           <a className="message" href="/adminlogin">
-            {message}
+            {info}
           </a>
         )}
       </div>
