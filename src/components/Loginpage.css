@@ -5,50 +5,95 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
+.text-centerr {
+  font-family: "Monotype Corsiva";
+  font-size: 2rem;
+  text-align: center;
+ 
+}
 .text-center {
   font-family: "Monotype Corsiva";
+  font-size: 2rem;
+  animation: moveText 2s ease-in-out infinite;
 }
 
-.form-container {
-  width: 60%;
-  margin: 10px 40px 30px 224px;
+/* Animation to move the text */
+@keyframes moveText {
+  0% {
+    transform: translateX(0); /* Start at the normal position */
+  }
+  25% {
+    transform: translateX(20px); /* Move to the right */
+  }
+  50% {
+    transform: translateX(0); /* Return to the normal position */
+  }
+  75% {
+    transform: translateX(-20px); /* Move to the left */
+  }
+  100% {
+    transform: translateX(0); /* End at the normal position */
+  }
+}
+
+/* Flex container to align forms horizontally without space between them */
+.form-container-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Optional: to add some space on top */
+}
+
+.form-container, .form-container1 {
+  width: 36%;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-top: 20px;
+  margin: 0; /* Remove margin to eliminate space between containers */
+  height: 400px;
 }
 
 .form-container .form-label {
   font-weight: bold;
 }
-.form-control
-{
+
+.form-control {
   margin: 10px 40px 20px 2px;
   width: 90%;
 }
+
 .form-container input {
-  border-radius: 4px;
+  /* Removed border-radius */
+}
+
+/* Align the Remember Me checkbox and Login button in the same line */
+.form-container1 .form-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between checkbox and button */
+}
+
+/* Space between Remember Me checkbox and Login button */
+.form-check .login-button {
+  margin-left: 25px; /* Add space between the checkbox and button */
 }
 
 button {
   background: linear-gradient(135deg, #fb9337, #dfabeb);
-  width: 30%;
-  margin: 20px 50px 40px 106px;
-  border: none;  /* Remove the border */
-  border-radius: 4px; /* Optional: if you want to keep rounded corners */
-  color: white; /* Ensure the text is white */
-  font-weight: bold; /* Make the text bold */
-  padding: 10px 20px; /* Adjust the padding to make it more clickable */
-  text-transform: uppercase; /* Optional: capitalizes the text */
+  width: 3px;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 button:hover {
-  background: linear-gradient(135deg, #6eae57, #d995c1);  /* Slightly darker gradient on hover */
-  cursor: pointer;  /* Shows a pointer cursor on hover */
+  background: linear-gradient(135deg, #6eae57, #d995c1);
+  cursor: pointer;
 }
-
+.login-button{
+  width: 138px;
+}
 
 .forgot-password {
   text-decoration: none;
