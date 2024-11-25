@@ -45,4 +45,22 @@
 .edit, .delete{
     margin: 10px;
 }
+.logo-bar{
+    border: 1px solid rgb(216, 205, 205);
+    height: 55px;
+    position: fixed;
+    width: 100vw;
+    background-color: antiquewhite;
 
+}
+.logo-img{
+    width: 65px;
+    padding: 10px;
+    
+    position: fixed;
+
+}
+
+.main-body{
+    padding: 60px;
+}

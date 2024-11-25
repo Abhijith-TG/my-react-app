@@ -82,7 +82,14 @@ function AddNewProduct() {
   };
 
   return (
-    <div className="">
+    <>
+    <div>
+    <nav className="logo-bar">
+          <img src="/images/logoE-commerce.png" alt="logo"  className="logo-img"/>
+      </nav>
+      </div>
+    <div className="main-body">
+      
       <span className="header">
         <h1 className="addnewProject">Add New Product</h1>
         <Button
@@ -200,6 +207,7 @@ function AddNewProduct() {
         </Table>
       </div>
     </div>
+    </>
   );
 }
 
