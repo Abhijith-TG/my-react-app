@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style2.css';
+import '../styles/style.css';
 import { useNavigate } from 'react-router-dom';
 import { Card, Form, Button, Modal } from 'react-bootstrap';
 

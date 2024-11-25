@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './style2.css';
+import '../styles/style.css';
 import { Card, Form, Button,} from 'react-bootstrap';
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
