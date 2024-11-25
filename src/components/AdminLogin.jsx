@@ -48,13 +48,7 @@ function AdminLogin() {
     >
       <div>
         <img
-          src="/images/zippycart.png"
-          style={{
-            width: "100px",
-            marginTop: "25px",
-            marginLeft: "1350px",
-            marginBottom: "-1%",
-          }}
+          src="/images/zippycart.png" className="image"
         />
         <p
           style={{

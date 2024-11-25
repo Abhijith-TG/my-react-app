@@ -125,5 +125,10 @@ position:relative;
     text-decoration: none;
     color:black;
 }
-
+.image{
+    width:100px;
+    margin-top:25px;
+    margin-left: 1350px;
+    margin-bottom: -1%;
+  }
 
