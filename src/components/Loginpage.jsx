@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import "./Loginpage.css";
+import "../styles/Loginpage.css";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -48,8 +48,20 @@ const LoginPage = () => {
     <div className="caa">
       <br />
       <br />
-
+     
       <div className="container mt-5">
+      <div>
+  <img
+    src="/images/zippycart.png"
+    style={{
+      width: "100px",
+      position: "absolute",  // Position the image absolutely
+      top: "0",               // Align it to the top of the page
+      left: "0",              // Align it to the left of the page
+      margin: "0",            // Remove any extra margin
+    }}
+  />
+</div>
         <h2 className="text-centerr">Please Login Here</h2>
         {error && <div className="alert alert-danger">{error}</div>}
         {message && <div className="alert alert-success">{message}</div>}
