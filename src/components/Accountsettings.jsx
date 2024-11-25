@@ -123,7 +123,7 @@ const styles = {
     border: "1px solid #ddd",
     borderRadius: "8px",
     backgroundColor: "#f9f9f9",
-    backgroundColor: "rgba(255, 255, 255, 0.8)", // Semi-transparent white
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
     backgroundImage: "url('C:\Users\devus\OneDrive\Desktop\Kompetenzen\html\file-Su63YUn1kr4voiZWDnXPS7EL.webp')",
     backgroundSize: "cover",
     backgroundPosition: "center", 
