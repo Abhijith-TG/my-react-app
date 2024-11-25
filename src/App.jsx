@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
  import Loginpage from "./components/Loginpage";
- import RegistrationForm  from "./components/RegistrationForm";
+ import Forgetpassword from "./components/Forgetpassword";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Routes>
            
            <Route path="/" element={<Loginpage />} /> 
-            {/* <Route path="/r" element={<RegistrationForm />}/>    */}
+          <Route path="/f" element={<Forgetpassword />}/>   
         </Routes>
       </BrowserRouter>
     </>
