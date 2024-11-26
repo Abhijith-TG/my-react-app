@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
  import Loginpage from "./components/Loginpage";
  import Forgetpassword from "./components/Forgetpassword";
+ 
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
            
-           <Route path="/" element={<Loginpage />} /> 
+           <Route path="/" element={<Loginpage />} />    
           <Route path="/f" element={<Forgetpassword />}/>   
         </Routes>
       </BrowserRouter>
