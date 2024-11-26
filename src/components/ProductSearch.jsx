@@ -24,7 +24,7 @@ const ProductSearch = () => {
     };
     fetchProducts();
   }, []);
-const navigate = useNavigate()
+
   const handleSearch = () => {
     
     if (searchQuery.trim() === '') {

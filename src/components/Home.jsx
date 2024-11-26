@@ -2,7 +2,6 @@ import React, {useContext} from 'react'
 import CategoryCard from './CategoryCard';
 import Carousel from 'react-bootstrap/Carousel';
 import { EcommerceContext } from '../services/ApiFetchContext';
-import ProductSearch from './ProductSearch';
 
 
 function Home() {
@@ -25,7 +24,7 @@ function Home() {
   
   return (
     <>
-    <ProductSearch/>
+    
       <div className="categories-container">
         {categories.map((category, index) => (
           <CategoryCard key={index} name={category.name} image={category.image} />
