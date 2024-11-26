@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/AddressStyle.css"
+import "../styles/AddressStyle.css";
 const AddressList = ({ addresses, setAddresses }) => {
   const navigate = useNavigate();
 

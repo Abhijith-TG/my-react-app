@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AddressList from "./components/AddressLists";
-import AddAddressForm from "./components/AddAddress";
+import AddressList from "./components/AddressList";
+import AddAddressForm from "./components/AddAddressForm";
 
 
 const App = () => {
