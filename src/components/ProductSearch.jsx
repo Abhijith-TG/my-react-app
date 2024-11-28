@@ -8,6 +8,7 @@ const ProductSearch = () => {
   const navigate = useNavigate();
 
   const handleSearch = () => {
+    
     if (searchQuery.trim() === '') {
       navigate('/');
     } else {
