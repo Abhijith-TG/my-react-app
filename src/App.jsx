@@ -8,6 +8,8 @@ import ApiFetchContext from './services/ApiFetchContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Loginpage from "./components/Loginpage";
 import Forgetpassword from "./components/Forgetpassword";
+import AdminLogin from './components/AdminLogin';
+import ForgotPassword from './components/ForgotPassword';
 function App() {
   return (
     <Router>
@@ -17,7 +19,9 @@ function App() {
       <Route path='/home' element={<Home/>} />
       <Route path='/category/:categoryName' element={<Home/>} />
       <Route path="/login" element={<Loginpage />} />    
-      <Route path="/f" element={<Forgetpassword />}/>   
+      <Route path="/f" element={<Forgetpassword />}/>
+      <Route path='/adminlogin' element={<AdminLogin/>}/>
+      <Route path='/forgotpassword' element={<ForgotPassword/>}/>   
       </Routes>
       </ApiFetchContext>
     </Router>
