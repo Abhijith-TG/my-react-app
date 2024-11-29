@@ -13,8 +13,8 @@ function App() {
     <Router>
       <ApiFetchContext>
       <Routes>
-      <Route path='/sign' element={<RegistrationForm/>} />
-      <Route path='/' element={<Home/>} />
+      <Route path='/' element={<RegistrationForm/>} />
+      <Route path='/home' element={<Home/>} />
       <Route path='/category/:categoryName' element={<Home/>} />
       <Route path="/login" element={<Loginpage />} />    
       <Route path="/f" element={<Forgetpassword />}/>   
