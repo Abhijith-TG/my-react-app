@@ -33,7 +33,7 @@ function AdminLogin() {
 
   const handleNavigate = () => {
     // Redirect to the home page after successful login
-    navigate("/", { state: { loggedIn: true, name: loginEmail } });
+    navigate("/admin", { state: { loggedIn: true, name: loginEmail } });
   };
 
   return (

@@ -7,7 +7,6 @@ import { EcommerceContext } from "../services/ApiFetchContext";
 
 const LoginPage = () => {
 
-
   const {user} = useContext(EcommerceContext);
   const navigate = useNavigate();
   const location = useLocation();
@@ -24,7 +23,7 @@ const LoginPage = () => {
     const storedname = state.formData.name;
     console.log(state.formData);
 
-    if (storedname && storedPassword === password) {
+    if (storedPassword && storedPassword === password) {
       setMessage("Login successful!");
       setError("");
       if (storedname && storedname === username) {
@@ -48,6 +47,9 @@ const LoginPage = () => {
     // Handle forgot password logic here (e.g., navigate to a password reset page)
     console.log("Forgot Password clicked");
   };
+  const handleSignup =() =>{
+    navigate('/adminlogin')
+  }
 
   return (
     <div className="caa">
@@ -144,8 +146,9 @@ const LoginPage = () => {
             <br></br>
             <div className="signup-link mt-3">
               <span>
-                Don't have an account? <a href="/r">Sign Up</a>
+                Don't have an account? <a href="/signup">Sign Up</a>
               </span>
+              <button className="ad-btn" onClick={handleSignup}>Admin Login</button>
             </div>
           </div>
 

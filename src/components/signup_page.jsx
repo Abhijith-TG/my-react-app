@@ -9,9 +9,6 @@ const RegistrationForm = () => {
 
   console.log(user);
   
-  
-
-  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
