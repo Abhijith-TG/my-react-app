@@ -6,6 +6,11 @@ export const EcommerceContext = createContext();
 
 function ApiFetchContext({children}) {
     const[products, setProducts] = useState([]);
+    const[user,setUser] = useState([{
+        name:'Admin',
+        role:'admin',
+        password:'12345678'
+    }])
     const url = "https://fakestoreapi.com/products";
     useEffect(()=>{
         dataFetch()
@@ -19,7 +24,7 @@ function ApiFetchContext({children}) {
     
   return (
     <>
-        <EcommerceContext.Provider value={products}>
+        <EcommerceContext.Provider value={{products,user,setUser}}>
             {children}
         </EcommerceContext.Provider>
     </>

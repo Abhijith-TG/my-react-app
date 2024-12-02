@@ -1,14 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import '../styles/signup_up.css';
 import { useNavigate } from 'react-router-dom';
+import { EcommerceContext } from '../services/ApiFetchContext';
 
 const RegistrationForm = () => {
+
+  const {setUser,user} = useContext(EcommerceContext);
+
+  console.log(user);
+  
+  
+
   
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
     confirmPassword: '',
+    role:'user'
   });
 
   const [errors, setErrors] = useState({
@@ -50,16 +59,22 @@ const navigate=useNavigate();
 
     
     if (validateForm()) {
+      
+      setUser([...user,formData])
+      console.log(user);
+      
      
+
       // console.log('Form data submitted:', formData);
       navigate('/',{state:{formData}})
-    
+      
      
       setFormData({
         name: '',
         email: '',
         password: '',
         confirmPassword: '',
+        role:'user'
       });
       setErrors({});
     }

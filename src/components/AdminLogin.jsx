@@ -61,7 +61,7 @@ function AdminLogin() {
           Shop the future today!
         </p>
       </div>
-      <div className="container">
+      <div className="container1">
         <Card className="card">
           <Form onSubmit={handleLogin}>
             <h2 className="heading">Admin Login</h2>

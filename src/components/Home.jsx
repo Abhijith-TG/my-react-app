@@ -11,7 +11,7 @@ function Home() {
     { name: "Women's Clothing", image:"https://imgs.search.brave.com/zxxMGyc9iQOdHn7EIHvozHx0O7zDORN_sIWWK-twSOo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zdW1tZXItdHJl/bmR5LXdvbWFuLWNs/b3RoZXMtYWNjZXNz/b3JpZXNfNDA4Nzk4/LTY4OTQuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZA"},
     { name: "Jewellery", image:"https://imgs.search.brave.com/xanvvYEPhUcuz53S4DXNNw7cXchnprKz_X5XbRk-adg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5LzU2LzYzLzgx/LzM2MF9GXzk1NjYz/ODEyMl9COW8wbk5E/ZkRjWVhLemlKS1NQ/ZDhZb3k4NG5PZU1M/WS5qcGc"}
   ];
-  const products = useContext(EcommerceContext)
+  const {products} = useContext(EcommerceContext)
   console.log(products);
 
   const getRandomProducts = (data, count) => {

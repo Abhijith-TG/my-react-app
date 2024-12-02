@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import "../styles/Loginpage.css";
+import { EcommerceContext } from "../services/ApiFetchContext";
+
 
 const LoginPage = () => {
+
+
+  const {user} = useContext(EcommerceContext);
   const navigate = useNavigate();
   const location = useLocation();
   const { state } = location;
@@ -19,7 +24,7 @@ const LoginPage = () => {
     const storedname = state.formData.name;
     console.log(state.formData);
 
-    if (storedPassword && storedPassword === password) {
+    if (storedname && storedPassword === password) {
       setMessage("Login successful!");
       setError("");
       if (storedname && storedname === username) {
