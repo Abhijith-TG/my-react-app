@@ -1,0 +1,66 @@
+.title, .price, .description, .category, .image{
+    margin-bottom: 30px;
+}
+
+.productTable{
+    
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 100px;
+    border: 3px rgb(238, 177, 23);
+
+}
+
+.tableDiv{
+    margin: 30px;
+    text-align: center;
+}
+
+.header{
+   display: flex;
+   justify-content: space-evenly;
+   
+    
+}
+.button1{
+    margin-top: 20px;
+    background-color: orange; 
+    
+}
+
+.button1:hover{
+    background-color: orange;
+}
+.addnewProject{
+    margin-top: 20px;  
+    
+}
+.action{
+    width: 100px;
+}
+.action-dis{
+    display: flex;
+    justify-content: space-between;
+}
+.edit, .delete{
+    margin: 10px;
+}
+.logo-bar{
+    border: 1px solid rgb(216, 205, 205);
+    height: 55px;
+    position: fixed;
+    width: 100vw;
+    background-color: antiquewhite;
+
+}
+.logo-img{
+    width: 65px;
+    padding: 10px;
+    
+    position: fixed;
+
+}
+
+.main-body{
+    padding: 60px;
+}

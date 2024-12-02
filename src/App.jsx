@@ -10,6 +10,7 @@ import Loginpage from "./components/Loginpage";
 import Forgetpassword from "./components/Forgetpassword";
 import AdminLogin from './components/AdminLogin';
 import ForgotPassword from './components/ForgotPassword';
+import AddNewproduct from './components/AddNewproduct';
 function App() {
   return (
     <Router>
@@ -21,7 +22,8 @@ function App() {
       <Route path="/login" element={<Loginpage />} />    
       <Route path="/f" element={<Forgetpassword />}/>
       <Route path='/adminlogin' element={<AdminLogin/>}/>
-      <Route path='/forgotpassword' element={<ForgotPassword/>}/>   
+      <Route path='/forgotpassword' element={<ForgotPassword/>}/>
+      <Route path='/admin' element={<AddNewproduct/>} />   
       </Routes>
       </ApiFetchContext>
     </Router>
