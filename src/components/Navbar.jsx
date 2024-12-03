@@ -28,7 +28,7 @@ const ProductSearch = () => {
       <Container fluid className="d-flex align-items-center justify-content-between">
         
         {/* Search Bar on the Left with smaller size */}
-        <div className="d-flex" style={{ flex: 1, maxWidth: '300px' }}>
+        <div className="d-flex" style={{ flex: 1, maxWidth: '299px' }}>
           <InputGroup className="mb-2 w-100">
             <FormControl
               type="text"
