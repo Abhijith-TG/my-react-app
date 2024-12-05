@@ -19,24 +19,18 @@ const LoginPage = () => {
 
   const handleLoginClick = (e) => {
     e.preventDefault();
-    const storedPassword = state.formData.password;
-    const storedname = state.formData.name;
-    console.log(state.formData);
+    const matchingUser = user.find(
+      (u) => u.name === username && u.password === password
+    )
 
-    if (storedPassword && storedPassword === password) {
-      setMessage("Login successful!");
-      setError("");
-      if (storedname && storedname === username) {
-        setMessage("Login successful!");
-        setError("");
-        navigate("/dashboard");
-      }
-
+    if(matchingUser){
+      setMessage("Login Successfull!")
+      setError("")
       if (rememberMe) {
         localStorage.setItem("rememberedUsername", username);
       }
 
-      //   navigate("/a"); // Redirect to a different page after successful login
+      navigate("/home") 
     } else {
       setError("Invalid username or password");
       setMessage("");
@@ -92,7 +86,7 @@ const LoginPage = () => {
               </label>
 
               <span style={{ marginLeft: "95px" }}>
-                <a href="/f">Forget password ?</a>
+                <a onClick={handleForgotPassword}>Forget password ?</a>
               </span>
             </div>
 

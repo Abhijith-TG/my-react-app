@@ -1,9 +1,12 @@
-body{
-    background-image: url("https://files.oaiusercontent.com/file-MXufkSAwwhp6eZoAZvSInGmu?se=2024-11-22T14%3A19%3A36Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D31f4f4f4-dd54-4120-8ae6-72890b2e727d.webp&sig=F8zG%2BXL00txPHoDQjcZCAaXHMnWShQcGcDjWiAmSMvA%3D");
+.bodybg{
+    background-image: url("https://imgs.search.brave.com/fw62S5gNnPxjPT2Ltw68-C2noiDvI63iilY3U7ItUVQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/YWJzdHJhY3Qtd2F0/ZXJjb2xvci1iYWNr/Z3JvdW5kXzIzLTIx/NDkwNjk2NjguanBn/P3NlbXQ9YWlzX2h5/YnJpZA");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .footer{
     text-align: center;
-    background-color:  rgba(80, 76, 71, 0.5);
+    background-color:  rgba(133, 127, 119, 0.5);
     position: fixed;
     bottom: 0;
     left: 0;

@@ -2,6 +2,8 @@ import React, {useContext} from 'react'
 import CategoryCard from './CategoryCard';
 import Carousel from 'react-bootstrap/Carousel';
 import { EcommerceContext } from '../services/ApiFetchContext';
+import '../styles/home.css'
+import '../styles/CategoryCard.css'
 
 
 function Home() {
@@ -23,7 +25,7 @@ function Home() {
   const topPicks = getRandomProducts(products, 6); 
   
   return (
-    <>
+    <div className='bodybg'>
     
       <div className="categories-container">
         {categories.map((category, index) => (
@@ -89,7 +91,7 @@ function Home() {
       </section>
       <div style={{padding:"20px"}}>&nbsp;</div>
     <div className='footer'>Powered by 2024 Hexon. All Rights Reserved</div>
-    </>
+    </div>
   )
 }
 

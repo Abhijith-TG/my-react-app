@@ -7,11 +7,11 @@ const CategoryCard = ({ name, image }) => {
         navigate(`/category/${name}`)
     }
   return (
-    <div className="category-card" onClick={handleClick}>
-        <div className="content">
-          <div className="text">{name}</div>
+    <div className="category-cardd" onClick={handleClick}>
+        <div className="contentt">
+          <div className="textt">{name}</div>
         </div>
-        <div className="image">
+        <div className="imagee">
             <img src={image} alt="img"/>
         </div>
     </div>
