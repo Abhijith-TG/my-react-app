@@ -4,6 +4,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import { EcommerceContext } from '../services/ApiFetchContext';
 import '../styles/home.css'
 import '../styles/CategoryCard.css'
+import { Navbar } from 'react-bootstrap';
+import ProductSearch from './Navbar';
 
 
 function Home() {
@@ -26,6 +28,7 @@ function Home() {
   
   return (
     <div className='bodybg'>
+      <ProductSearch/>
     
       <div className="categories-container">
         {categories.map((category, index) => (

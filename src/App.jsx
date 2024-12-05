@@ -11,6 +11,8 @@ import Forgetpassword from "./components/Forgetpassword";
 import AdminLogin from './components/AdminLogin';
 import ForgotPassword from './components/ForgotPassword';
 import AddNewproduct from './components/AddNewproduct';
+import ProductSearch from './components/Navbar';
+import SearchResults from './components/SearchResults';
 function App() {
   return (
     <Router>
@@ -24,6 +26,8 @@ function App() {
       <Route path='/adminlogin' element={<AdminLogin/>}/>
       <Route path='/forgotpassword' element={<ForgotPassword/>}/>
       <Route path='/admin' element={<AddNewproduct/>} />   
+      <Route path="/nav" element={<ProductSearch />} />
+      <Route path="/search" element={<SearchResults />} />
       </Routes>
       </ApiFetchContext>
     </Router>
