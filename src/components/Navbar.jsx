@@ -72,7 +72,7 @@ const ProductSearch = () => {
           }}
         >
           <div className="store-name">ZippyStore.com</div>
-          <img src="/Images/logo.png" alt="Logo" style={{ height: '65px', width: 'auto', objectFit: 'contain', marginLeft: '10px' }} />
+          <img src="/images/imgg.png" alt="Logo" style={{ height: '65px', width: 'auto', objectFit: 'contain', marginLeft: '10px' }} />
         </Navbar.Brand>
 
         {/* Cart and Profile Icons */}
@@ -81,7 +81,7 @@ const ProductSearch = () => {
             <BsCart size={24} />
           </Nav.Link>
           <Dropdown align="end">
-            <Dropdown.Toggle variant="lin" id="profile-dropdown" style={{ color: 'white' }}>
+            <Dropdown.Toggle variant="link" id="profile-dropdown" style={{ color: 'white' }}>
               <BsPerson size={24} />
             </Dropdown.Toggle>
             <Dropdown.Menu>
