@@ -24,7 +24,7 @@ const ProductSearch = () => {
   };
   return (
   <>
-    <Navbar  expand="lg" className='nav1' style={{ padding: '0.5rem 1rem', height: '60px', backgroundColor:"rgba(255, 165, 0, 0.5)" }}>
+    <Navbar  expand="lg" className='nav1' style={{ padding: '0.5rem 1rem', height: '60px', backgroundColor:"rgba(110, 107, 102, 0.5" }}>
       <Container fluid className="d-flex align-items-center justify-content-between">
         
         {/* Search Bar on the Left with smaller size */}
@@ -81,7 +81,7 @@ const ProductSearch = () => {
             <BsCart size={24} />
           </Nav.Link>
           <Dropdown align="end">
-            <Dropdown.Toggle variant="link" id="profile-dropdown" style={{ color: 'white' }}>
+            <Dropdown.Toggle variant="lin" id="profile-dropdown" style={{ color: 'white' }}>
               <BsPerson size={24} />
             </Dropdown.Toggle>
             <Dropdown.Menu>

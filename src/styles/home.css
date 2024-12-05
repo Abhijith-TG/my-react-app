@@ -1,12 +1,12 @@
 .bodybg{
-    background-image: url("https://imgs.search.brave.com/fw62S5gNnPxjPT2Ltw68-C2noiDvI63iilY3U7ItUVQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/YWJzdHJhY3Qtd2F0/ZXJjb2xvci1iYWNr/Z3JvdW5kXzIzLTIx/NDkwNjk2NjguanBn/P3NlbXQ9YWlzX2h5/YnJpZA");
+    background-image: url("https://img.freepik.com/free-vector/colorful-pastel-poly-background_53876-62611.jpg?ga=GA1.1.370649366.1731832645&semt=ais_hybrid");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .footer{
     text-align: center;
-    background-color:  rgba(133, 127, 119, 0.5);
+    background-color:  rgba(110, 107, 102, 0.5);
     position: fixed;
     bottom: 0;
     left: 0;
