@@ -17,6 +17,8 @@ import UserProfile from './components/Profile';
 import './style/Profile.css'
 import AccountSettings from './components/Accountsettings';
 import AddressSettings from "./components/AddressSettings";
+import Helpcenter from './components/Helpcenter';
+import Customercenter from './components/Customercenter';
 function App() {
   return (
     <Router>
@@ -35,6 +37,8 @@ function App() {
       <Route path='/user' element={<UserProfile/>} />
       <Route path='/accset' element={ <AccountSettings />} />
       <Route path='/addset' element={ <AddressSettings/>} />
+      <Route path='/help' element={<Helpcenter/>}/>
+      <Route path='/cust' element={<Customercenter/>}/>
       </Routes>
       </ApiFetchContext>
     </Router>
