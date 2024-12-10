@@ -13,6 +13,8 @@ import ForgotPassword from './components/ForgotPassword';
 import AddNewproduct from './components/AddNewproduct';
 import ProductSearch from './components/Navbar';
 import SearchResults from './components/SearchResults';
+import UserProfile from './components/Profile';
+import './style/Profile.css'
 function App() {
   return (
     <Router>
@@ -28,6 +30,7 @@ function App() {
       <Route path='/admin' element={<AddNewproduct/>} />   
       <Route path="/nav" element={<ProductSearch />} />
       <Route path="/search" element={<SearchResults />} />
+      <Route path='/user' element={<UserProfile/>} />
       </Routes>
       </ApiFetchContext>
     </Router>
