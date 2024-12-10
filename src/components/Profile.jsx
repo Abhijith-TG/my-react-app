@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const UserProfile = () => {
   const handleLogout = () => {
     alert("Logged out successfully!");
     // Add your logout logic here
   };
+  const navigate = useNavigate()
+  const handleSet =()=>{
+    navigate('/accset')
+  }
 
   return (
     <div
@@ -45,7 +50,7 @@ const UserProfile = () => {
             cursor: "pointer",
             fontSize: "1rem",
             marginBottom: "10px",
-          }}
+          }} onClick={handleSet}
         >
           Profile Settings
         </button>
