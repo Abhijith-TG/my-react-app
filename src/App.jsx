@@ -16,6 +16,7 @@ import SearchResults from './components/SearchResults';
 import UserProfile from './components/Profile';
 import './style/Profile.css'
 import AccountSettings from './components/Accountsettings';
+import AddressSettings from "./components/AddressSettings";
 function App() {
   return (
     <Router>
@@ -33,10 +34,13 @@ function App() {
       <Route path="/search" element={<SearchResults />} />
       <Route path='/user' element={<UserProfile/>} />
       <Route path='/accset' element={ <AccountSettings />} />
+      <Route path='/addset' element={ <AddressSettings/>} />
       </Routes>
       </ApiFetchContext>
     </Router>
   );
 }
+
+
 
 export default App;
