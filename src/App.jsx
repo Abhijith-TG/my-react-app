@@ -15,6 +15,7 @@ import ProductSearch from './components/Navbar';
 import SearchResults from './components/SearchResults';
 import UserProfile from './components/Profile';
 import './style/Profile.css'
+import AccountSettings from './components/Accountsettings';
 function App() {
   return (
     <Router>
@@ -31,6 +32,7 @@ function App() {
       <Route path="/nav" element={<ProductSearch />} />
       <Route path="/search" element={<SearchResults />} />
       <Route path='/user' element={<UserProfile/>} />
+      <Route path='/accset' element={ <AccountSettings />} />
       </Routes>
       </ApiFetchContext>
     </Router>
