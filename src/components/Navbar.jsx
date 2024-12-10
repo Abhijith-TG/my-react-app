@@ -88,7 +88,7 @@ const ProductSearch = () => {
               <Dropdown.Item eventKey="account" onClick={() => handleProfileClick(navigate('/user'))}>
                 Account
               </Dropdown.Item>
-              <Dropdown.Item eventKey="cust" onClick={() => handleProfileClick("cust")}>
+              <Dropdown.Item eventKey="cust" onClick={() => handleProfileClick(navigate('/help'))}>
                 Customer Support
               </Dropdown.Item>
             </Dropdown.Menu>

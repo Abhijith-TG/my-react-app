@@ -10,6 +10,9 @@ const UserProfile = () => {
   const handleSet =()=>{
     navigate('/accset')
   }
+  const handleAddSet =()=>{
+    navigate('/addset')
+  }
 
   return (
     <div
@@ -67,7 +70,7 @@ const UserProfile = () => {
             cursor: "pointer",
             fontSize: "1rem",
             marginBottom: "10px",
-          }}
+          }}onClick={handleAddSet}
         >
           Address Settings
         </button>
