@@ -85,7 +85,7 @@ const ProductSearch = () => {
               <BsPerson size={24} />
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item eventKey="account" onClick={() => handleProfileClick("Account")}>
+              <Dropdown.Item eventKey="account" onClick={() => handleProfileClick(navigate('/user'))}>
                 Account
               </Dropdown.Item>
               <Dropdown.Item eventKey="cust" onClick={() => handleProfileClick("cust")}>
