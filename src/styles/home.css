@@ -1,0 +1,28 @@
+.bodybg{
+    background-image: url("https://img.freepik.com/free-vector/colorful-pastel-poly-background_53876-62611.jpg?ga=GA1.1.370649366.1731832645&semt=ais_hybrid");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer{
+    text-align: center;
+    background-color:  rgba(110, 107, 102, 0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    backdrop-filter: blur(5px);
+    color: aliceblue;
+}
+.toppicks{
+    background-color: rgb(255, 255, 255);
+}
+.addcart{
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    
+}
