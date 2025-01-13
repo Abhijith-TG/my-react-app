@@ -1,0 +1,64 @@
+.background{
+    
+    display: flex;
+    padding: 0;
+    height: 100vh;
+    margin: 0 ;
+    background: linear-gradient(135deg, #ffb76e, #c6e9ff);
+}
+.registration-container {
+    width: 100%;
+    height: 75%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 110px;
+    
+    
+  }
+  
+.heading {
+    text-align: center;
+    font-family: "Monotype Corsiva";
+    font-size: 2rem;
+    color: #ffb76e ;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    
+  }
+  label{
+    font-weight: bold;
+  }
+  .inputs {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  .submit-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  

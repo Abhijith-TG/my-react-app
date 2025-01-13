@@ -33,7 +33,7 @@ function AdminLogin() {
 
   const handleNavigate = () => {
     // Redirect to the home page after successful login
-    navigate("/", { state: { loggedIn: true, name: loginEmail } });
+    navigate("/admin", { state: { loggedIn: true, name: loginEmail } });
   };
 
   return (
@@ -61,7 +61,7 @@ function AdminLogin() {
           Shop the future today!
         </p>
       </div>
-      <div className="container">
+      <div className="container1">
         <Card className="card">
           <Form onSubmit={handleLogin}>
             <h2 className="heading">Admin Login</h2>
