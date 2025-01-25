@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/customercenter.css";  
+import "../styles/customercenter.css";
 
 const Customercenter = () => {
   const [formData, setFormData] = useState({
@@ -20,32 +20,26 @@ const Customercenter = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Ensure the name field is filled
     if (!formData.name.trim()) {
       setModalMessage("Please enter your name!");
+      setModalVisible(true);
       return;
     }
 
-    // Success Message
     setModalMessage(
       `${formData.name}, your message is precious or important. We will update as soon as possible.`
     );
     setModalVisible(true);
+
     setTimeout(() => {
       setModalVisible(false);
-    }, 5000);
+    }, 3000);
 
-    // Close the modal after 2 minutes
-    // setTimeout(() => {
-    //   setModalVisible(false);
-    // }, 1000);
-
-    // Optionally reset the form
     setFormData({ name: "", phone: "", email: "", comments: "" });
   };
 
   return (
-    <div className="app-container">
+    <div className="customer-center">
       <h1>Customer Center Services</h1>
       <form onSubmit={handleSubmit} className="form-container">
         <div className="form-group">
@@ -92,7 +86,6 @@ const Customercenter = () => {
         </button>
       </form>
 
-      {/* Modal Box */}
       {modalVisible && (
         <div className="modal-overlay">
           <div className="modal-box">
